@@ -1,0 +1,28 @@
+:root{--bg:#f4f6fb;--card:#fff;--ink:#1a2340;--mut:#5b6584;--acc:#2456e6;--line:#e3e8f5}
+*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink);display:flex}
+.sidebar{width:230px;background:#101a3a;color:#fff;min-height:100vh;padding:18px 12px;position:sticky;top:0;height:100vh}
+.brand{font-weight:700;font-size:18px;margin-bottom:14px}
+.sidebar nav button{display:block;width:100%;text-align:left;background:none;border:0;color:#cfd8ff;padding:9px 10px;border-radius:8px;cursor:pointer;font-size:14px}
+.sidebar nav button.active,.sidebar nav button:hover{background:#2440a0;color:#fff}
+.side-foot{margin-top:20px;font-size:11px;color:#93a0d0}
+main{flex:1;padding:18px 22px;max-width:1200px}
+.topbar h1{margin:0 0 8px;font-size:22px}
+.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;background:var(--card);border:1px solid var(--line);padding:10px 12px;border-radius:12px}
+.filters select,.filters button{padding:6px 10px;border-radius:8px;border:1px solid var(--line)}
+.filters button{background:var(--acc);color:#fff;border:0;cursor:pointer}
+#updated{font-size:12px;color:var(--mut)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:14px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.kpi .v{font-size:22px;font-weight:700}.kpi .l{font-size:12px;color:var(--mut)}
+section.blk{margin:18px 0}section.blk h2{font-size:18px;margin:6px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.card h3{margin:0 0 8px;font-size:15px}
+.tabs{display:flex;gap:6px;margin-bottom:8px}
+.tabs button{border:1px solid var(--line);background:#eef2ff;border-radius:7px;padding:4px 10px;cursor:pointer;font-size:12px}
+.tabs button.active{background:var(--acc);color:#fff}
+.card table{width:100%;border-collapse:collapse;font-size:12px;max-height:260px;overflow:auto;display:block}
+.card th,.card td{border:1px solid var(--line);padding:4px 6px;text-align:right}
+.card th:first-child,.card td:first-child{text-align:left}
+canvas{max-height:300px}
+.src{font-size:12px;color:var(--mut)}
